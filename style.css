@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-body {
-	display: grid;
-	place-items: center;
-	width: 100%;
-	height: 100vh;
-	font-family: "Roboto", sans-serif;
-}
 a {
 	text-decoration: none!important;
 }
@@ -22,7 +15,7 @@ a {
 	display: block;
 }
 .product .product-image img {
-	width: 200px;
+	width: 100%;
 	height: auto;
 }
 .product .product-image .pic-1 {
@@ -32,8 +25,7 @@ a {
 	opacity: 0;
 }
 .product .product-image .pic-2 {
-	width: 200px;
-	height: auto;
+	width: 100%;
 	backface-visibility: hidden;
 	opacity: 0;
 	position: absolute;
@@ -46,7 +38,7 @@ a {
 }
 .product .discount {
 	color: #fff;
-	background: #c66;
+	background: #F7941D;
 	font-size: 12px;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -75,7 +67,7 @@ a {
 .product .cart:hover {
 	opacity: 1;
 	color: #fff;
-	background: #c66;
+	background: #F7941D;
 }
 .product:hover .cart {
 	bottom: 0px;
@@ -103,14 +95,14 @@ a {
 	height: 30px;
 	border-radius: 30px;
 	display: block;
-	background: #000;
+	background: #F7941D;
 	transition: .5s;
 	margin-bottom: 5px;
-	padding-top: 10px;
+	padding-top: 1px;
 }
 .product:hover .links li a:hover {
 	color: #fff;
-	background: #c66;
+	background: grey;
 }
 .product .content {
 	padding: 12px;
@@ -138,10 +130,10 @@ a {
 	transition: .5s;
 }
 .product .title a:hover {
-	color: #c66;
+	color: #F7941D;
 }
 .product .price {
-	color: #c66;
+	color: #F7941D;
 	font-size: 14px;
 	font-weight: 700;
 }
@@ -151,42 +143,38 @@ a {
 	font-weight: 300;
 	font-size: 12px;
 }
-@media screen and (max-width: 990px) {
-.product {
-	margin: 0 0 30px;
-}
-}
+
 /*OWL*/
 .owl-controls .owl-buttons {
 	position: relative;
 }
 .owl-controls .owl-prev {
 	position: absolute;
-	left: -40px;
-	bottom: 185px;
-	padding: 8px 17px;
-	background: #c66;
-	border-radius: 50px;
+	left: 5px;
+	bottom: 150px;
+	padding: 10px 17px 10px 15px;
+	background: #F7941D;
 	transition: .5s;
+	align-items: center;
 }
 .owl-controls .owl-next {
 	position: absolute;
-	right: -40px;
-	bottom: 185px;
-	padding: 8px 17px;
-	background: #c66;
-	border-radius: 50px;
+	right: 5px;
+	bottom: 150px;
+	padding: 10px 15px 10px 17px;
+	background: #F7941D;
 	transition: .5s;
 }
 .owl-controls .owl-prev:after, .owl-controls .owl-next:after {
-	content: '\f104';
+	content: '\f053';
 	font-family: FontAwesome;
 	color: #fff;
 	font-size: 16px;
 }
 .owl-controls .owl-next:after {
-	content: '\f105';
+	content: '\f054';
 }
 .owl-controls .owl-prev:hover, .owl-controls .owl-next:hover {
-	background: #000;
+	background: grey;
+	
 }
